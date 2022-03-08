@@ -1,1 +1,1 @@
-# Reposytory for Data Analytics course 2022
+# Repository for Data Analytics course 2022
