@@ -10,20 +10,20 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 15> locations_array__ = 
 {" (found before start of program)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 9, column 3 to column 18)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 10, column 3 to column 14)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 11, column 3 to column 23)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 15, column 3 to column 24)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 16, column 3 to column 24)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 18, column 3 to column 40)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 2, column 3 to column 18)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 3, column 3 to column 18)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 4, column 10 to column 11)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 4, column 13 to column 14)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 4, column 3 to column 18)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 5, column 9 to column 10)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 5, column 3 to column 19)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 9, column 10 to column 11)"};
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 9, column 4 to column 19)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 10, column 4 to column 15)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 11, column 4 to column 24)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 15, column 4 to column 25)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 16, column 4 to column 25)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 18, column 4 to column 41)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 2, column 4 to column 19)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 3, column 4 to column 19)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 4, column 11 to column 12)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 4, column 14 to column 15)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 4, column 4 to column 19)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 5, column 10 to column 11)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 5, column 4 to column 20)",
+ " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/DA_LAB~1/STANFI~1/model1.stan', line 9, column 11 to column 12)"};
 
 
 
