@@ -8,25 +8,24 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 18> locations_array__ = 
+static constexpr std::array<const char*, 17> locations_array__ = 
 {" (found before start of program)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 14, column 3 to column 22)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 16, column 14 to column 15)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 16, column 4 to column 47)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 17, column 4 to column 38)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 18, column 4 to column 61)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 15, column 3 to line 18, column 62)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 2, column 4 to column 19)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 3, column 4 to column 19)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 4, column 11 to column 12)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 4, column 14 to column 15)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 4, column 4 to column 19)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 5, column 4 to column 15)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 9, column 11 to column 12)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 9, column 4 to column 40)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 10, column 11 to column 12)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 10, column 4 to column 40)",
- " (in 'C:/Users/JAKUBB~1/VSCODE~2/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 14, column 10 to column 11)"};
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 14, column 4 to column 23)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 15, column 4 to column 47)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 16, column 4 to column 38)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 17, column 4 to column 61)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 2, column 4 to column 19)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 3, column 4 to column 19)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 4, column 11 to column 12)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 4, column 14 to column 15)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 4, column 4 to column 19)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 5, column 4 to column 15)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 9, column 11 to column 12)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 9, column 4 to column 40)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 10, column 11 to column 12)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 10, column 4 to column 40)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 14, column 11 to column 12)",
+ " (in 'C:/Users/JAKUBB~1/DOCUME~1/VSCODE~1/DA_BUR~1/da_lab_5/STANFI~1/logistic_regression_ppc.stan', line 15, column 14 to column 15)"};
 
 
 
@@ -69,31 +68,31 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 7;
+      current_statement__ = 5;
       context__.validate_dims("data initialization","N","int",
            std::vector<size_t>{});
       N = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 7;
+      current_statement__ = 5;
       N = context__.vals_i("N")[(1 - 1)];
-      current_statement__ = 7;
+      current_statement__ = 5;
       stan::math::check_greater_or_equal(function__, "N", N, 1);
-      current_statement__ = 8;
+      current_statement__ = 6;
       context__.validate_dims("data initialization","M","int",
            std::vector<size_t>{});
       M = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 8;
+      current_statement__ = 6;
       M = context__.vals_i("M")[(1 - 1)];
-      current_statement__ = 8;
+      current_statement__ = 6;
       stan::math::check_greater_or_equal(function__, "M", M, 1);
-      current_statement__ = 9;
+      current_statement__ = 7;
       stan::math::validate_non_negative_index("X", "N", N);
-      current_statement__ = 10;
+      current_statement__ = 8;
       stan::math::validate_non_negative_index("X", "M", M);
-      current_statement__ = 11;
+      current_statement__ = 9;
       context__.validate_dims("data initialization","X","double",
            std::vector<size_t>{static_cast<size_t>(N),
             static_cast<size_t>(M)});
@@ -104,57 +103,59 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
       
       {
         std::vector<local_scalar_t__> X_flat__;
-        current_statement__ = 11;
+        current_statement__ = 9;
         X_flat__ = context__.vals_r("X");
-        current_statement__ = 11;
+        current_statement__ = 9;
         pos__ = 1;
-        current_statement__ = 11;
+        current_statement__ = 9;
         for (int sym1__ = 1; sym1__ <= M; ++sym1__) {
-          current_statement__ = 11;
+          current_statement__ = 9;
           for (int sym2__ = 1; sym2__ <= N; ++sym2__) {
-            current_statement__ = 11;
+            current_statement__ = 9;
             stan::model::assign(X, X_flat__[(pos__ - 1)],
               "assigning variable X", stan::model::index_uni(sym2__),
                                         stan::model::index_uni(sym1__));
-            current_statement__ = 11;
+            current_statement__ = 9;
             pos__ = (pos__ + 1);
           }
         }
       }
-      current_statement__ = 12;
+      current_statement__ = 10;
       context__.validate_dims("data initialization","sigma","double",
            std::vector<size_t>{});
       sigma = std::numeric_limits<double>::quiet_NaN();
       
       
-      current_statement__ = 12;
+      current_statement__ = 10;
       sigma = context__.vals_r("sigma")[(1 - 1)];
-      current_statement__ = 13;
+      current_statement__ = 11;
       stan::math::validate_non_negative_index("ones_N", "N", N);
-      current_statement__ = 14;
+      current_statement__ = 12;
       ones_N__ = 
         Eigen::Matrix<double, -1, 1>::Constant(N,
           std::numeric_limits<double>::quiet_NaN());
       new (&ones_N) Eigen::Map<Eigen::Matrix<double, -1, 1>>(ones_N__.data(), N);
         
       
-      current_statement__ = 14;
+      current_statement__ = 12;
       stan::model::assign(ones_N, stan::math::rep_vector(1, N),
         "assigning variable ones_N");
-      current_statement__ = 15;
+      current_statement__ = 13;
       stan::math::validate_non_negative_index("ones_M", "M", M);
-      current_statement__ = 16;
+      current_statement__ = 14;
       ones_M__ = 
         Eigen::Matrix<double, -1, 1>::Constant(M,
           std::numeric_limits<double>::quiet_NaN());
       new (&ones_M) Eigen::Map<Eigen::Matrix<double, -1, 1>>(ones_M__.data(), M);
         
       
-      current_statement__ = 16;
+      current_statement__ = 14;
       stan::model::assign(ones_M, stan::math::rep_vector(1, M),
         "assigning variable ones_M");
-      current_statement__ = 17;
+      current_statement__ = 15;
       stan::math::validate_non_negative_index("prob_ppc", "N", N);
+      current_statement__ = 16;
+      stan::math::validate_non_negative_index("beta", "M", M);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -224,27 +225,25 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
       Eigen::Matrix<double, -1, 1> prob_ppc =
          Eigen::Matrix<double, -1, 1>::Constant(N,
            std::numeric_limits<double>::quiet_NaN());
-      {
-        current_statement__ = 2;
-        stan::math::validate_non_negative_index("beta", "M", M);
-        std::vector<double> beta =
-           std::vector<double>(M, std::numeric_limits<double>::quiet_NaN());
-        current_statement__ = 3;
-        stan::model::assign(beta,
-          stan::math::normal_rng(0, stan::math::multiply(ones_M, sigma),
-            base_rng__), "assigning variable beta");
-        double alpha = std::numeric_limits<double>::quiet_NaN();
-        current_statement__ = 4;
-        alpha = stan::math::normal_rng(0, sigma, base_rng__);
-        current_statement__ = 5;
-        stan::model::assign(prob_ppc,
-          stan::math::inv_logit(
-            stan::math::add(
-              stan::math::multiply(X, stan::math::to_vector(beta)),
-              stan::math::multiply(ones_N, alpha))),
-          "assigning variable prob_ppc");
-      }
+      std::vector<double> beta =
+         std::vector<double>(M, std::numeric_limits<double>::quiet_NaN());
+      current_statement__ = 2;
+      stan::model::assign(beta,
+        stan::math::normal_rng(0, stan::math::multiply(ones_M, sigma),
+          base_rng__), "assigning variable beta");
+      double alpha = std::numeric_limits<double>::quiet_NaN();
+      current_statement__ = 3;
+      alpha = stan::math::normal_rng(0, sigma, base_rng__);
+      current_statement__ = 4;
+      stan::model::assign(prob_ppc,
+        stan::math::inv_logit(
+          stan::math::add(
+            stan::math::multiply(X, stan::math::to_vector(beta)),
+            stan::math::multiply(ones_N, alpha))),
+        "assigning variable prob_ppc");
       out__.write(prob_ppc);
+      out__.write(beta);
+      out__.write(alpha);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -272,7 +271,7 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
     
   inline void get_param_names(std::vector<std::string>& names__) const {
     
-    names__ = std::vector<std::string>{"prob_ppc"};
+    names__ = std::vector<std::string>{"prob_ppc", "beta", "alpha"};
     
     } // get_param_names() 
     
@@ -280,7 +279,9 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
     
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{
                                                                    static_cast<size_t>(N)
-                                                                   }};
+                                                                   },
+      std::vector<size_t>{static_cast<size_t>(M)}, std::vector<size_t>{
+      }};
     
     } // get_dims() 
     
@@ -301,6 +302,12 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
           param_names__.emplace_back(std::string() + "prob_ppc" + '.' + std::to_string(sym1__));
         } 
       }
+      for (int sym1__ = 1; sym1__ <= M; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "beta" + '.' + std::to_string(sym1__));
+        } 
+      }
+      param_names__.emplace_back(std::string() + "alpha");
     }
     
     } // constrained_param_names() 
@@ -322,19 +329,25 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
           param_names__.emplace_back(std::string() + "prob_ppc" + '.' + std::to_string(sym1__));
         } 
       }
+      for (int sym1__ = 1; sym1__ <= M; ++sym1__) {
+        {
+          param_names__.emplace_back(std::string() + "beta" + '.' + std::to_string(sym1__));
+        } 
+      }
+      param_names__.emplace_back(std::string() + "alpha");
     }
     
     } // unconstrained_param_names() 
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"prob_ppc\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"prob_ppc\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"},{\"name\":\"beta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"prob_ppc\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"prob_ppc\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"},{\"name\":\"beta\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(M) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"},{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -349,7 +362,8 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 0;
       const size_t num_transformed = 0;
-      const size_t num_gen_quantities = N;
+      const size_t num_gen_quantities = 
+  ((N + M) + 1);
       std::vector<double> vars_vec(num_params__
        + (emit_transformed_parameters * num_transformed)
        + (emit_generated_quantities * num_gen_quantities));
@@ -369,7 +383,8 @@ class logistic_regression_ppc_model final : public model_base_crtp<logistic_regr
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 0;
       const size_t num_transformed = 0;
-      const size_t num_gen_quantities = N;
+      const size_t num_gen_quantities = 
+  ((N + M) + 1);
       vars.resize(num_params__
         + (emit_transformed_parameters * num_transformed)
         + (emit_generated_quantities * num_gen_quantities));

@@ -11,9 +11,8 @@ transformed data {
 }
 
 generated quantities {
-   vector[N] prob_ppc;
-   {
+    vector[N] prob_ppc;
     real beta[M] = normal_rng(0, ones_M*sigma);
     real alpha = normal_rng(0, sigma);
-    prob_ppc = inv_logit(X * to_vector(beta) + ones_N*alpha);}
+    prob_ppc = inv_logit(X * to_vector(beta) + ones_N*alpha);
 }
